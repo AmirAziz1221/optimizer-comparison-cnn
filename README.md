@@ -1,5 +1,4 @@
 # optimizer-comparison-cnn
-# optimizer-comparison-cnn
 
 **Optimizer Behavior & Backprop Visualizer**
 
@@ -126,7 +125,7 @@ Reasons for this choice:
 
 ### 2.5 Block Diagram
 
-![Optimizer comparison project pipeline](images/pipeline_diagram.png)
+![Optimizer comparison project pipeline](images/optimizer_comparison_project_pipeline_v2.png)
 
 ```
               +---------------------------+
