@@ -152,3 +152,7 @@ Reasons for this choice:
 - Rumelhart, Hinton, Williams (1986) — original backpropagation paper.
 - Kingma & Ba (2014) — "Adam: A Method for Stochastic Optimization."
 - Loshchilov & Hutter (2017) — "Decoupled Weight Decay Regularization" (AdamW).
+
+### 3 Team
+1. Amir Aziz
+2. Iltaf Hussain
