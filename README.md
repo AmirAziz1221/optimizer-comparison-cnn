@@ -127,49 +127,6 @@ Reasons for this choice:
 
 ![Optimizer comparison project pipeline](images/optimizer_comparison_project_pipeline_v2.png)
 
-```
-              +---------------------------+
-              |   1. Load CIFAR-10        |
-              |   60,000 images, 10 cls   |
-              +-------------+-------------+
-                            |
-                            v
-              +---------------------------+
-              | 2. Preprocess & split     |
-              | normalize, augment,       |
-              | train / val / test        |
-              +-------------+-------------+
-                            |
-                            v
-              +---------------------------+
-              | 3. Define CNN             |
-              | fixed architecture & seed |
-              +-------------+-------------+
-                            |
-                            v
-   +----------------------------------------------------------+
-   | 4. Train with four optimizers (same data/epochs/seed)     |
-   |                                                            |
-   |  +--------+  +----------------+  +-------+  +---------+   |
-   |  |  SGD   |  | SGD+Momentum   |  | Adam  |  |  AdamW  |   |
-   |  | lr=0.1 |  | lr=0.1, b=0.9  |  |lr=1e-3|  |wd=0.01  |   |
-   |  +--------+  +----------------+  +-------+  +---------+   |
-   +--------------------------+---------------------------------+
-                              |
-                              v
-              +---------------------------+
-              | 5. Evaluate & compare     |
-              | accuracy, loss, time,     |
-              | generalization gap        |
-              +-------------+-------------+
-                            |
-                            v
-              +---------------------------+
-              | 6. Visualize & report     |
-              | plots, README, dashboard  |
-              +---------------------------+
-```
-
 
 ### 2.6 Step-by-Step Execution Plan
 
